@@ -15,7 +15,7 @@ class User{
       $this->db= new MyPDO;
     }
 
-    // 2 funcoes,insere um registro natabela usuario, e retorna o id do usuario inserido
+    // 2 funcoes,insere um registro na tabela usuario, e retorna o id do usuario inserido
     public function create($first_name, $last_name, $date_of_birth, $email, $password, $role){
         $param = [ ':ufirst_name'=>$first_name,
                    ':ulast_name'=>$last_name,

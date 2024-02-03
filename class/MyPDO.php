@@ -1,5 +1,6 @@
 <?php
 
+ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_reporting(E_ALL);
 if ( session_status() !== PHP_SESSION_ACTIVE )
  {
     session_start();
@@ -8,7 +9,7 @@ if ( session_status() !== PHP_SESSION_ACTIVE )
 class MyPDO{
 
     private $pdo;
-    const PARAM_host='192.168.178.34';
+    const PARAM_host='localhost';
     const PARAM_port='3306';
     const PARAM_db_name='webshop2023new';
     const PARAM_user='root';
@@ -42,9 +43,6 @@ class MyPDO{
     }
 
 }
-   
-
-    
 
 
 ?>

@@ -8,7 +8,7 @@ class Cart{
     public function __construct() {
       $this->db= new MyPDO;
     }
-    // insere um registro na tabela carrinho associado ao usuario logado na sessao
+    // insere um registro na tabela carrinho associado ao usuario logado na sessao 
     public function create($user_id){
         $param = [ ':uuser_id'=>$user_id,
                    

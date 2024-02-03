@@ -10,9 +10,6 @@ echo '<pre>';
 
 print_r($usuarios);
 
-
-
-
 ?>
 
 <!DOCTYPE html>
@@ -20,7 +17,7 @@ print_r($usuarios);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Djooooooo</title>
 </head>
 <body>
     

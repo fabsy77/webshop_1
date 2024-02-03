@@ -57,7 +57,7 @@ class Product{
     public function delete($id){
         $param = [':uid'=>$id];
 
-        $query = $this->db->query('DELETE FROM products WHERE id = :uid', $param);
+        $query = $this->db->query('DELETE FROM products WHERE id = :uid', $param, true);
 
         return $query;
     }
