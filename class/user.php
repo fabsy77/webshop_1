@@ -39,7 +39,7 @@ class User{
                    ':upassword'=>$password
 
     ];
-      $query = $this->db->query('SELECT * FROM users WHERE email = :uemail AND password = :upassword', $param);
+      $query = $this->db->query('SELECT * FROM users WHERE email = :uemail AND password = md5(:upassword)', $param);
 
         return $query; 
     }
